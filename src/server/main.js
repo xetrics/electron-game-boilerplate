@@ -9,7 +9,7 @@ const createWindow = () => {
         width: 1000,
         height: 800,
         webPreferences: {
-            devTools: !isDev()
+            devTools: isDev()
         }
     });
 
@@ -19,6 +19,7 @@ const createWindow = () => {
         win.removeMenu();
     } else {
         win.autoHideMenuBar = true;
+        win.webContents.openDevTools();
     }
 };
 
