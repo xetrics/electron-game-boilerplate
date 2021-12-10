@@ -13,6 +13,15 @@ npm install
 npm run start
 ```
 
+## Configuration
+The following environment variables are reccomended to be set either within your development environment or inside of a `.env` file
+
+Example .env file:
+```
+SCOPE=development
+PROJECT_NAME=Boilerplate
+```
+
 ## License
 
 This project is licensed under the MIT License
