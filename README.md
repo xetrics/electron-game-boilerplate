@@ -14,7 +14,7 @@ npm run start
 ```
 
 ## Configuration
-The following environment variables are reccomended to be set either within your development environment or inside of a `.env` file
+The following environment variables are recommended to be set either within your development environment or inside of a `.env` file
 
 Example .env file:
 ```
