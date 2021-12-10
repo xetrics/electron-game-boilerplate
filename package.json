@@ -1,0 +1,24 @@
+{
+  "name": "electron-game-boilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./src/server/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "prestart": "npm run build",
+    "start": "electron ."
+  },
+  "keywords": [],
+  "author": "xetrics",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "electron": "^16.0.4"
+  },
+  "devDependencies": {
+    "html-webpack-plugin": "^5.5.0",
+    "webpack": "^5.65.0",
+    "webpack-cli": "^4.9.1"
+  }
+}
