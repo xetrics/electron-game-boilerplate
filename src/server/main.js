@@ -14,7 +14,12 @@ const createWindow = () => {
     });
 
     win.loadFile(path.resolve(process.cwd(), "build/index.html"));
-    win.removeMenu();
+
+    if(!isDev()) {
+        win.removeMenu();
+    } else {
+        win.autoHideMenuBar = true;
+    }
 };
 
 app.whenReady().then(() => {
